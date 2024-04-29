@@ -6,6 +6,9 @@ import "swiper/css";
 import { Autoplay } from 'swiper/modules';
 import Data from "../products.json"
 import ProductDisplay from './ProductDisplay';
+import Review from './Review';
+import Tags from './Tags'
+import PopularPost from './PopularPost'
 
 function SingleProduct() {
 
@@ -84,9 +87,17 @@ function SingleProduct() {
                     </div>
                   </div>
                 </div>
+
+                {/*  reviews   */}
+                <div className='review mt-3'>
+                  <Review />
+                </div>
               </article>
             </div>
-            <div className='col-lg-4 col-12'>Left Side</div>
+            <div className='col-lg-4 col-12'>
+              <PopularPost />
+              <Tags />
+            </div>
           </div>
         </div>
       </div>
